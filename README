@@ -1,2 +1,66 @@
 # quac
 online business management software.
+
+
+stuff to do in quac:
+
+clients.php
+-- (2) improve load time of main page(?) maybe load a partial amount of clients for the list and then load again when scolling down
+-- e-mail function needs to be finalized by making images copy/pastable in message form 
+-- make function to view ALL clients (active and inactive)
+
+tickets.php
+- ticket saving mechanism needs to be finished [ DELETING ONLY DELETES TICKET NOT ROWS ]
+-- change mil. time to AM/PM
+-- (2) make tip function work (with tip table in DB)
+
+employees.php
+-- make tickets.php transfer employee service/product data to employee file for payroll later
+-- make function to view ALL (active and inactive)  employees and make sure inactive button works
+-- fix save mech.
+
+
+manage.php
+-- (2) add function to add employee available for the day (add a blank column for that employee)
+-- long term employee availability function to appear in daily view by custom availability
+
+products.php
+-- add purchase order function to change stock count values for products in the DB according to what was recieved
+-- sorting function for the data table
+
+services.php
+-- sorting function for the data table (in progress)
+
+accounts.php
+-- sales tax mech.
+-- make account ledger edit boxes bigger
+-- reconciling function: save last reconcile date to database and use as default for future reconciling
+-- make a check for ending balance in database versus user input ending balance (e.g. from bank statement)
+
+
+reports.php
+--make reports mechanism
+-- by employee
+-- by vendor
+-- by customer
+-- by item/service
+-- by time (for all)
+-- (2) cool graphs
+
+tutorial.php
+--make the tutorial! derp
+
+settings.php
+-- fix image upload
+-- for limited access users, hide accounts/reports/settings
+
+
+
+other stuff:
+------------
+payroll 
+vendor bills (pay)
+save transacation after closing ticket to appropriate accounts
+timepunch for employees
+
+

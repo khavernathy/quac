@@ -1,3 +1,5 @@
+local_only
+local_only/*
 *.tar
 *.tmp
 *test*
@@ -9,5 +11,3 @@ mysql/*
 phpinfo.php
 cool-cat.jpg
 whoami.php
-hostgator*
-hostgator.txt

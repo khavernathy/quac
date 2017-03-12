@@ -3,6 +3,7 @@ local_only/*
 *.tar
 *.tmp
 *test*
+*Test*
 carryover_data
 carryover_data/*
 mysql

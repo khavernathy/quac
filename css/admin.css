@@ -1,0 +1,757 @@
+/* Styles for Quac Program */
+/*General*/
+html {
+	border-top: 6px solid #4F040B;
+	border-left: 6px solid #4F040B;
+}
+
+body {
+	/* font-size: 11px; /* 62.5% Resets 1em to 10px */
+	font-size: 14px; /* much better */
+	font-family: Verdana, Arial, Courier, Sans-serif;
+	color: #4F040B;
+	text-align: left;
+        background: url(../images/linen.jpg);
+        background-repeat: repeat;
+		background-attachment:fixed;
+	margin: 0px;
+	padding: 0px;
+}
+
+hr {
+	margin-bottom: 0px;
+}
+
+img {
+	padding: 0px;
+	margin: 0px;
+}
+
+div.border {
+	padding: 0px;
+	margin: 0px;
+}
+
+div#admin_header {
+	margin: 0px;
+	padding: 0px;
+	min-width: 1000px;
+	background: -webkit-linear-gradient(left, #EFEFEF , #4F040B); /*Safari*/
+	background: -o-linear-gradient(right, #EFEFEF, #4F040B); /*Opera */
+	background: -moz-linear-gradient(right, #EFEFEF, #4F040B); /*Firefox*/
+	background: linear-gradient(to right, #EFEFEF, #4F040B); /*Standard*/
+}
+
+/*
+div#admin_content {
+	height: 100%;
+}
+*/
+
+div#admin_content p {
+	margin: 10px;
+}
+
+p.notif {
+	border: 2px dashed #4F040B;
+	font-style: italic;
+	background-color: #ffff21;
+	padding: 3px;
+}
+
+h1 {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	color: #4F040B;
+}
+
+h1 span {
+	font-size: 10px;
+	display: inline-block;
+}
+
+h3 {
+	margin: 1px;
+	margin-bottom: 4px;
+	padding: 0px;
+}
+
+h3.email-title {
+	margin: 1px;
+	padding: 0px;
+}
+
+span.email-attempts {
+	border: 2px solid #000; font-weight: bold; padding: 2px;
+}
+
+/* all table headers color maroonish*/
+table tr th { 
+	/*background-color: rgba(0,150,105,0.8); */
+	background-color: rgba(239,239,239,0.8); 
+	padding-left: 2px; /*color: #ffffff; */
+}
+/*table thead tr th a {color: #ffffff;}*/
+
+/* tooltip */
+.ht:hover .tooltip {
+	display:block;
+}
+
+.tooltip {
+	display: none;
+    background: #C8C8C8;
+	border: 1px solid #000;
+	border-radius: 4px;
+	margin-left: 50px; /* moves the tooltip to the right */
+	margin-top: 7px; /* moves it down */
+    padding: 2px;
+    position: absolute;
+    z-index: 1000;
+	max-width: 210px;
+	text-align: left;
+	font-weight: bold;
+}
+
+/* Top navigation links */
+
+span.login-out {
+	margin-left: 10px;
+}
+
+.topnav {
+    margin:0px 0px 0px 10px;
+    padding:0;
+    list-style-type:none;
+ }
+.topnav li {
+    display: inline-block;
+	margin: 7px 0px 0px 0px;
+ }
+.topnav a{
+    display: inline-block;
+ }
+ 
+.topnav li a:link, .topnav li a:visited {
+    color: #4F040B;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Sans-serif;
+    border: 2px solid #4F040B;
+	border-radius: 5px;
+    background: #efefef;
+    padding: 3px;
+    height: auto;
+ }
+.topnav li a:hover, .topnav li a:active {
+    color: grey;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Sans-serif;
+    border:2px solid #555;
+	border-radius: 5px;
+    background: #eee;
+    padding: 3px;
+    height: auto;
+ }
+ 
+body.manage a:link#manage, body.manage a:visited#manage{ border: 4px solid #4F040B; }
+body.appt-viewer a:link#appt-viewer, body.appt-viewer a:visited#appt-viewer{ border: 4px solid #4F040B; }
+body.clients a:link#clients, body.clients a:visited#clients{ border: 4px solid #4F040B; }
+body.employees a:link#employees, body.employees a:visited#employees { border: 4px solid #4F040B;}
+body.subscribers a:link#subscribers, body.subscribers a:visited#subscribers{ border: 4px solid #4F040B; }
+body.tutorial a:link#tutorial, body.tutorial a:visited#tutorial{ border: 4px solid #4F040B; }
+body.products a:link#products, body.products a:visited#products{ border: 4px solid #4F040B; }
+body.services a:link#services, body.services a:visited#services{ border: 4px solid #4F040B; }
+body.vendors a:link#vendors, body.vendors a:visited#vendors { border: 4px solid #4F040B; }
+body.accounts a:link#accounts, body.accounts a:visited#accounts { border: 4px solid #4F040B; }
+body.reports a:link#reports, body.reports a:visited#reports { border: 4px solid #4F040B; }
+
+
+
+/* Links */
+
+a  {color: #4F040B; text-decoration: none; border-bottom: 1px dotted;}	
+a:visited {color: #4F040B;}
+a:hover {text-decoration: none; color: #4F040B; }
+
+a.norm:hover, a.norm:active {border-bottom: none; color: black; font-weight: bold;}
+
+a.buttonLink {border-bottom: none;}
+img.button {position: relative; top: 5px;}
+img#emailCheckAllImage { cursor: pointer; } /* Not working */
+
+a#emailButton:hover, a#addApptButton:hover, a#transferButton:hover { cursor: pointer; }
+
+a.fbb:visited, a.fbb:link { border: 1px solid #4F040B; border-radius: 2px; background-color: #cdcdcd; padding: 0px 5px 0px 5px; margin: 0px; position: relative; top: 2px;}
+a.fbb:hover, a.fbb:active { border: 1px solid #4F040B; border-radius: 2px; background-color: #ffffff; padding: 0px 5px 0px 5px; margin: 0px; position: relative; top: 2px;}
+
+a.serviceBoxLink { width: 100%; cursor: pointer;}
+
+a.dl:hover, a.dl:active { color: #000; font-weight: bold; }
+
+/*table tr td a:visited, table tbody tr td a:link {
+	color: #fff;
+}*/
+
+/* Forms */
+
+input[type="text"], textarea, select, input[type="submit"],input[type="button"],input[type="reset"],button, input[type="password"], input[type="email"], input[type="number"] {
+	font-family: Verdana, Arial, Courier, Sans-serif;
+	color: #000;
+	/* font-size: 10px; */
+	font-size: 14px;
+	border-radius: 4px;
+	border: 1px solid #4F040B;
+}
+
+textarea {
+	resize: none;
+}
+
+span.smallText {
+	font-size: 9px;
+}
+
+input[type="checkbox"] {
+	padding: 0px; margin: 0px;
+}
+
+div#emailFormBox {
+	/*position:relative; */
+	width: 100%;
+	/*height:100%; */
+	padding: 5px;
+}
+
+textarea.emailMessage, input[type="text"].emailSubject {
+	width: 80%;
+}
+
+textarea.emailMessage {
+	height: 150px;
+	/*border: 1px solid black;*/
+}
+
+/* Calendar (manage.php)*/
+
+form.cal-select { display: inline; }
+
+form.cal-select select { padding: 2px; border: 2px solid #4F040B; border-radius: 3px; }
+
+div#calendar-box {
+	width: 100%;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+table.calendar {
+	background-color: #a1a1a1;
+	font-family: Arial, Century Gothic, Serif;
+	font-size: 18px;
+	color: #4F040B;
+	width: 100%;
+}
+table.calendar tr.day-names-row {
+	border: 1px solid #efefef; 
+}
+table.calendar tr.day-row {
+	height: 75px;
+}
+table.calendar tr td {
+	border: 1px solid #efefef;
+	text-align: left;
+	vertical-align: top;
+	padding: 4px;
+	width: 125px; 
+}
+caption.calendar-month {
+	background-color: #B39699;
+	height: 32px;
+	font-size: 24px;
+}
+.today {
+	background-color: #efefef;
+}
+
+div.month-at-bottom {
+	position: fixed; 
+	bottom: 0px; 
+	left: 5px; 
+	border: 2px solid #4F040B;
+	padding: 3px;
+	border-bottom: 0px;
+	border-radius: 2px; 
+	background-color: #efefef;
+}
+
+div.appt {
+	border: 2px solid black;
+	padding: 3px;
+	margin-bottom: 3px;
+	background-color: rgba(239,239,239,0.8);
+	border-radius: 3px;
+	font-size: 12px;
+	font-family: Arial, Tahoma, Georgia;
+}
+
+div.other {
+	background-color: #DE9F47;
+}
+
+div.appt:hover {
+	border: 2px solid black;
+	padding: 3px;
+	background-color: rgba(212,210,3,0.8);
+}
+
+div#ind-day-box {
+	overflow: auto;
+	width: 100%;
+	height: 680px;
+	/*height: -webkit-calc(100% - 120px); height: -o-calc(100% - 120px); height: -moz-calc(100% - 120px); height: calc(100% - 120px);*/
+	border-top: 3px solid #000;
+	border-bottom: 3px solid #000;
+	float: left;
+}
+
+div.ind-service-box {
+	border-radius: 7px;
+	border: 1px solid #ffffff;
+	background-color: #910D1A;
+	color: #ffffff;
+	z-index: 999;
+	padding: 2px;
+	margin: 0px;
+	position: relative;
+	width: calc(100% - 4px);
+	z-index: 2;
+	overflow: hidden;
+	display: block;
+	float: left;
+}
+
+div.closedGrey {
+	background-color: #999999;
+}
+
+div.ind-service-box:hover {
+	background-color: #1a1a1a;
+}
+
+div.ind-service-box-wrapper {
+	border-radius: 7px;
+	max-height: 0px;
+	width: 100%;
+	overflow: visible;
+	background-color: rgba(0,0,0,0);
+	position: relative;
+	z-index: 2;
+	overflow: visible;
+	display: block;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+table.ind-day-table {
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	position: relative;
+	z-index: 1;
+	/*height:100%;*/
+}
+
+table.ind-day-table tr { height: 20px; overflow: visible; display: table-row;}
+table.ind-day-table tr.bgLine td:first-child {
+	/*background:url("../images/cat.jpg") repeat-x right top;*/
+	background-color:rgba(0,0,0,0);
+}
+
+table.ind-day-table tr th:first-child, table.ind-day-table tr td:first-child { width: 100px; }
+table.ind-day-table tr:first-child th { text-align:center; }
+table.ind-day-table tr td:first-child { 
+	background-color: #efefef; 
+	text-align: right;
+	padding-right: 4px;
+	border-right: 2px solid #000;
+}
+
+table.ind-day-table tbody tr td {
+	border-bottom: 1px solid #000;
+	border-right: 2px solid #000;
+	vertical-align: top;
+	padding: 0px;
+	margin: 0px;
+}
+
+table.ind-day-table tbody tr td:hover { 
+	background-color: #efefef;
+}
+
+table.ind-day-table thead tr th {
+	border-bottom: 2px solid #000;
+	border-right: 2px solid #000;
+	padding: 0px;
+	margin: 0px;
+}
+table.ind-day-table thead tr th:first-child { border-right: 2px solid #000; }
+
+table.ind-day-table tbody tr:nth-child(4n+5) td { border-bottom: 2px solid #000; }
+
+/* Appointment viewer (tickets.php) */
+
+div.appointment-box {
+	border-bottom: 3px solid #000;
+	border-top: 3px solid #000;
+	width: 100%;
+}
+
+div.appointment-box table {
+	width: 100%;
+}
+
+input[type="text"]#Tax, input[type="text"]#Total, input[type="text"]#Paid, input[type="text"]#Due, input[type="text"]#Subtotal, input[type="text"]#Tip, input[type="text"]#Change {
+	font-weight: bold;
+	padding-left:4px;
+	height:20px;
+}
+
+input[type="text"]#Total { color: #000; } /* #264d00; } /*#07B107; }*/
+input[type="text"]#Paid { color: #ff00ff; }
+input[type="text"]#Due { color: #ff0000; }
+
+
+
+input#apptDetailFormSubmit, input#saveAndCloseButton {
+	width: 125px;
+	height: 62px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+input#saveAndCloseButton {
+	font-size: 16px;
+}
+
+button.popupButton {
+	padding: 1px;
+	font-size: 10px;
+}
+
+table#appointment-totals {
+	/*width: 50%;*/
+	font-size:20px;
+}
+
+table#appointment-totals tr td {
+	text-align: left;
+	vertical-align: top;
+}
+
+table#appointment-totals tr td:nth-child(odd) {
+	text-align:right;
+}
+
+table#appointment-totals tr td select, table#appointment-totals tr td input[type="text"] {
+	height:20px;
+}
+
+/* Clients, Services, Products, Accounts pages */
+
+.rogray {
+	background-color:#C4C4C4; /* readonly gray */
+}
+
+.grayout {
+	color: #696969;
+	font-weight: normal;
+}
+
+div#email-presend-info-box {
+	border: 1px solid #000;
+	background-color: #cdcdcd;
+	padding: 4px;
+	margin: 2px;
+}
+
+div#new-account-form-box {
+	padding: 4px;
+	margin: 2px;
+}
+
+div#client-list-box, div#vendor-list-box, div#account-list-box, div#users-list-box, div#employee-list-box {
+	width: 24%;
+	height: 520px;
+	padding: 0px;
+	margin: 0px;
+	border: 3px solid black;
+	overflow: auto;
+	float: left;
+	clear: both;
+}
+/* div#account-list-box { width: 34%; } */
+
+div#client-detail-box, div#vendor-detail-box, div#account-detail-box, div#users-form-box, div#employee-detail-box {
+	width: 74%;
+	height: 355px;
+	padding: 0px; margin: 0px;
+	float:left;
+	border-width: 3px 3px 3px 0px;
+	border-style: solid;
+	border-color: #000;
+	overflow: auto;
+}
+div#vendor-detail-box, div#employee-detail-box { height: 250px; /* overwrites previous height */ }
+div#account-detail-box { height: 520px; /* overwrites previous value */ }
+
+div#account-detail-box table tbody tr td input[type="text"] { height: 18px;}
+
+div#client-transactions-box, div#vendor-transactions-box, div#employee-transactions-box {
+	width: 74%;
+	height: 162px;
+	padding: 0px; margin: 0px;
+	float: left;
+	border-width: 0px 3px 3px 0px;
+	border-style: solid;
+	border-color: #000;
+}
+
+div#vendor-transactions-box, div#employee-transactions-box { 
+	height: 267px; /*overwrites previous height*/ 
+	overflow: auto;
+}
+
+div#service-list-box, div#product-list-box {
+	width:99%;
+	height: 520px;
+	border: 3px solid #000;
+	overflow: auto;
+}
+
+div#client-tickets-table-box, div#client-services-table-box, div#client-products-table-box {
+	float: left;
+	border-right: 3px solid #000;
+	border-bottom: 2px solid #000;
+	/* background-color: #ffffff; */
+	overflow: auto;
+	height: 157px;
+	width: calc((100% / 3) - 6px);
+}
+
+span.subtable-title {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+table.clients , table.services, table.products, table.vendors, table.accounts, table.users, table.employees {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+table.services, table.products {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+table.services tr, table.products tr, table.vendors tr, table.accounts tr, table.users tr, table.employees tr {
+	max-height: 18px !important;
+	height: 18px !important;
+	white-space: nowrap;
+}
+table.clients tr {
+	max-height: 20px !important;
+	height: 20px !important;
+}
+
+table.clients tr:nth-child(even), table.vendors tr:nth-child(even), table.accounts tr:nth-child(even), table.services tr, table.products tr, table.users tr:nth-child(even), table.employees tr:nth-child(even) {
+	background-color: #C3C3C3;
+}
+table.clients tr:nth-child(even), table.vendors tr:nth-child(even), table.accounts tr:nth-child(even), table.users tr:nth-child(even), table.employees tr:nth-child(even) {
+	background-color: #FFFFFF;
+}
+
+table.clients tr td, table.vendors tr td, table.accounts tr td, table.users tr td, table.employees tr td { padding-left: 2px; }
+
+table.clients tr td, table.clients tr th, table.services tr td, table.services tr th, table.products tr td, table.products tr th, table.vendors tr td, table.vendors tr th, table.accounts tr td, table.accounts tr th, table.users tr td, table.users tr th, table.employees tr td {
+	border-bottom: 1px solid black;
+}
+
+table.services tr td, table.services tr th, table.products tr td, table.products tr th {
+	border-right: 1px solid black;
+	padding-left: 2px;
+}
+
+table.appointment-details tr td, table.payroll-table tr td {
+	border-bottom: 1px solid #cdcdcd;
+	border-right: 1px solid #cdcdcd;
+}
+
+table.appointment-details tr th:nth-child(1), table.appointment-details tr td:nth-child(1) {
+	width: 175px;
+}	
+
+table.appointment-details tr th:nth-child(2), table.appointment-details tr td:nth-child(2) {
+	width: 75px;
+}	
+
+table.appointment-details tr th:nth-child(3), table.appointment-details tr td:nth-child(3) {
+	width: 125px;
+}	
+
+table.appointment-details tr th:nth-child(4), table.appointment-details tr td:nth-child(4) {
+	width: 40px;
+}	
+
+table.appointment-details tr th:nth-child(11), table.appointment-details tr td:nth-child(11) {
+	display: none;
+}
+
+.highlightRed, #statusBox {
+	background-color: #4F040B !important;
+	color: #ffffff !important;
+}
+.highlightGray[style] {
+	background-color: #454545 !important;
+}
+.highlightGray2 {
+	background-color: #efefef !important;
+}
+
+#statusBox {  
+	max-height: 150px;
+	overflow:auto;
+	display:none;
+	position: relative;
+}
+
+#statusBox table tr:first-child { 
+	font-weight: bold; 
+	background-color: #A0A0A0;
+}
+
+span.searchInfoBar {
+	border-bottom: 1px solid #fff;
+	position: absolute;
+	width: 97.5%;
+	position: relative;
+	background-color: #C3C3C3;
+	color: #4F040B;
+}
+
+span.searchInfoBar a:hover, span.searchInfoBar a:active {
+	font-weight: bold;
+}
+
+table.client-tickets-table, table.client-services-table, table.client-products-table, table.vendor-transactions-table, table.employee-transactions-table { 
+	width: 100%; 
+	background-color: #fff;
+}
+
+table.client-tickets-table thead th, table.client-services-table thead th, table.client-products-table thead th, table.vendor-transactions-table thead th, table.employee-transactions-table thead th, table.payroll-table thead th {
+	border-right: 1px solid #cdcdcd;
+}
+
+table.client-tickets-table tbody tr, table.client-services-table tbody tr, table.client-products-table tbody tr, table.appointment-details tbody tr, table.payroll-table tbody tr {
+	background-color: #ffffff;
+}
+
+table.clients tr:hover, table.services tr:hover, table.products tr:hover, table.vendors tr:hover, table.accounts tr:hover, table.client-tickets-table tr:hover, table.appointment-details tr:hover, table.client-services-table tr:hover, table.client-products-table tr:hover, table.users tr:hover, table.employees tr:hover, table.payroll-table tr:hover {
+	background-color: #EDED43;
+	cursor: alias;
+}
+
+tr.searchLink {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+tr.searchLink:hover, tr.searchLink:active {
+	background-color: #EDED43;
+	color: #4F040B;
+	cursor: alias;
+}
+
+table.clients tr td:nth-child(3), table.vendors tr td:nth-child(2), table.users tr td:nth-child(1), table.employees tr td:nth-child(1) {
+	width:17%;
+}
+
+table.clients tr td:nth-child(1) {
+	/*visibility: hidden;*/
+}
+
+table.client-details, table.vendor-details, table.user-details, table.employee-details {
+	margin: 0px;
+	padding: 5px;
+	width: 100%;
+}
+table.account-details { padding: 0px; margin: 0px; width: 100%; }
+
+table.account-details tbody tr td input[type="text"] {width:100%;} /*90%;}*/
+
+table.client-details tr td, table.vendor-details tr td, table.account-details tr td, table.user-details tr td, table.employee-details tr td {
+	padding-right: 5px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+table.account-details tbody tr, table.account-details tbody tr td {
+	height: 15px !important;
+	min-height: 15px !important;
+	/* white-space: nowrap; */
+}
+
+table.client-details tr td textarea, table.vendor-details tr td textarea {
+	height: 50px;
+	width: 180px;
+}
+table.client-details tr td:nth-child(odd), table.vendor-details tr td:nth-child(odd), table.user-details tr td:nth-child(odd), table.employee-details tr td:nth-child(odd) {
+	text-align: right;
+}
+
+table.user-details tr td:nth-child(1) {
+	width: 135px;
+}
+
+table.client-tickets-table tr td, table.client-services-table tr td, table.client-products-table tr td, table.vendor-transactions-table tr td, table.employee-transactions-table tr td {
+	border-bottom: 1px solid #cdcdcd;
+	border-right: 1px solid #cdcdcd;
+}
+
+table.account-details tr:nth-child(even) { background-color: #E0EFE0; }
+table.account-details tr:nth-child(odd) { background-color: #FFFFFF; }
+table.account-details thead tr:nth-child(2) th {border-bottom: 3px solid #000;}
+table.account-details tr:nth-child(2n+1) td {border-bottom: 1px solid #000;}
+
+table.reconcile {width: 49%; float: left; border: 1px solid #000;}
+table.wd { float: right; }
+table.reconcile tr:hover { background-color: #EDED43; }
+table.reconcile tr { background-color: #c3c3c3; }
+table.reconcile tr td {border-right: 1px solid #000; border-bottom: 1px solid #000;}
+table.reconcile tr th {border-bottom: 1px solid #000; }
+/* table.reconcile tr td:nth-child(1), table.reconcile tr th:nth-child(1) { width: 20px; } */
+
+/* table.reconcile-general { border-right: 2px solid #000;} */
+table.reconcile-general tr td:nth-child(even) { border: 2px solid #4F040B; color: #000; }
+
+#bbal, #ebal, #difb, #deps, #debs { font-weight: bold; }
+span.gtt { color: #aa00ff; }
+span.btt { color: #0000ff; }
+
+table.account-details tr td, table.account-details tr th { border-right: 1px solid #000; padding-left: 2px;}
+
+div#apptDetailRows { height: 250px; overflow: auto; border-top: 2px solid #000; border-bottom: 2px solid #000; }
+
+
+
+/* REPORTS.PHP */
+div#reportDisplayBox { border: 1px solid #000;}
+
+/* EMPLOYEES.PHP (payroll) */
+table.payroll-table, table.payroll-table-totals {border: 1px solid black; font-size:18px; color:black;}
+table.payroll-table tbody tr td, table.payroll-table thead tr th, table.payroll-table-totals tbody tr td, table.payroll-table-totals thead tr th { border: 1px solid black; padding:5px;}
+/*table.payroll-table tr td:last-child {background-color:yellow;}*/
+

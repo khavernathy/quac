@@ -1,0 +1,60 @@
+body {
+	font-family: Arial, Helvettica, Times New Roman;
+	margin: 0px;
+	padding: 0px;
+}
+
+table.print_header tbody tr td {
+	vertical-align: top;
+	width: 100%;
+}
+
+table.print_header tbody tr td:nth-child(2) {
+	text-align: right;
+}
+
+span.invt {
+	font-size: 26px;
+	font-weight: bold;
+}
+
+table.date_and_num {
+	text-align: center;
+}
+
+table.date_and_num tbody tr:nth-child(1) {
+	height: 20px;
+	max-height: 20px !important;
+	white-space: nowrap;
+}
+
+table.date_and_num tbody tr:nth-child(2) {
+	height: 30px;
+	max-height: 30px !important;
+}
+
+span.clientInfo {
+	font-size: 15px;
+}
+
+table.print_ticket_details {
+	width: 98%;
+	margin: 0 auto;
+}
+
+td.righttd {
+	text-align: right;
+}
+
+span.boldred {
+	font-weight: bold;
+	color: #ff0000;
+}
+
+img.ontop {
+	position: fixed;
+	margin: 0px;
+	padding: 0px;
+	left: 475px;
+	top: 250px;
+}

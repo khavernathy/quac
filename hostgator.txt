@@ -1,0 +1,49 @@
+You can login to our billing system at http://gbclient.hostgator.com/login, using 
+khaverim7@gmail.com
+040291df    
+
+
+
+Control Panel:
+
+Shared Plan:        Business
+    Your Control Panel: https://gator4200.hostgator.com:2083
+    Username:           quacsoft91
+    Domain:             quacsoft.com
+    Password:           SonataQuac! //// OLD: Uxd9ucu2Bh]l
+    1st Nameserver:     ns8399.hostgator.com
+    2nd Nameserver:     ns8400.hostgator.com
+    Server IP:          108.167.189.25
+
+
+FTP
+ftp91@quacsoft.com
+040291df
+
+SSH (won't work until DNS propagates (24-48 hrs)
+ssh -p 2222 quacsoft91@108.167.189.25
+SonataQuac! //// OLD: Uxd9ucu2Bh]l
+
+
+MySQL
+db quacsoft_000bmds
+user quacsoft_admin91
+pass mysqlPassword%7!] ///// OLD: bmdsAdmin91!?
+
+Email
+doug@quacsoft.com
+040291df
+
+sales@quacsoft.com
+sales33
+
+support@quacsoft.com
+support33
+
+
+
+quacsoft.com login
+====================
+bmds
+admin
+quacer1

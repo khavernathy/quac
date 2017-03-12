@@ -1,0 +1,11 @@
+*.tar
+*.tmp
+*test*
+carryover_data
+carryover_data/*
+mysql
+mysql/*
+*.zip
+phpinfo.php
+cool-cat.jpg
+whoami.php
